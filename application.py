@@ -11,3 +11,6 @@ weight = 22
 answer = number + weight
 
 print(answer)
+
+name = "Aidan"
+print(name)
