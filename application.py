@@ -4,13 +4,13 @@ print("This is the next statement")
 number = 77
 print(number)
 
-print('number')
+first_name = "Aidan"
 
-weight = 22
+last_name = "Lachlan"
 
-answer = number + weight
-
-print(answer)
-
-name = "Aidan"
+name = first_name + " " + last_name
 print(name)
+
+weight = 160
+sentence = name + " weighs " + str(weight) + " lbs"
+print(sentence)
