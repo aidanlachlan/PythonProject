@@ -94,5 +94,19 @@
 
 # print(sentence.startswith("%4$", 9))
 
+# Section 6 // Formatting string with Format method
 
-
+# correct_answer = 15
+# sentence = f"The sum of 5 + 10 is {correct_answer}"
+# print(sentence)
+# answer = 50
+# sentence = "The sum of 5 + 10 is {0}".format(answer)
+# print(sentence, answer == correct_answer)
+#
+# sentence = "The sum of 5 + 10 is {0}".format("nice day")
+# print(sentence)
+#
+# sentence = "The sum of {0} + {0} is {0}".format(10)
+# print(sentence, False)
+# sentence = "The sum of {0} + {1} is {2}".format(10, 15, 25)
+# print(sentence)
