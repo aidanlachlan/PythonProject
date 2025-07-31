@@ -110,3 +110,15 @@
 # print(sentence, False)
 # sentence = "The sum of {0} + {1} is {2}".format(10, 15, 25)
 # print(sentence)
+
+# Section 7 // String are Immutable
+
+# my_var = "abcdefg"
+# print(my_var[0])
+#
+# # my_var[0] = '1' # error: 'str' object does not support item assignment
+# # print(my_var[0])
+#
+# # print("1" + my_var[1:])
+# my_var = "1" + my_var[1:]
+# print(my_var)
