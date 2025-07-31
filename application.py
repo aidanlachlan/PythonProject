@@ -43,7 +43,7 @@
 #
 # print(answer)
 
-# Section 4 // string indexing and slicing
+# Section 4 // String indexing and slicing
 # sentence = 'This is a sentence'
 # # next_sentence = 'I'm coming home'
 # print(sentence)
@@ -64,4 +64,35 @@
 # print(sentence[0:7:2])
 # print(sentence[3:])
 # print(sentence[-3:])
+
+# Section 5 // Basic string methods
+# sentence = "this is a sentence"
+# sentence_to_upper = sentence.upper() # method
+#
+# print() # function
+# print(sentence_to_upper)
+#
+# sentence = "this IS a SENTENCE"
+# print(sentence.lower())
+# print(sentence.capitalize())
+#
+# is_digit = sentence.isdigit()
+# print("is_digit?", is_digit)
+#
+# sentence = "9484"
+# print(sentence)
+# print(sentence.isdigit())
+# sentence = "93893843 3984934392830"
+# print(sentence, "is_digit?", is_digit)
+# sentence = "A83739586325"
+# is_alnum = sentence.isalnum()
+# print(sentence,"is_alnum?", is_alnum)
+#
+# sentence = "A09832094%4$al342"
+#
+# print(sentence.startswith("A098"))
+
+# print(sentence.startswith("%4$", 9))
+
+
 
