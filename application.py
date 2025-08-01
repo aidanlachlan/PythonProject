@@ -122,3 +122,139 @@
 # # print("1" + my_var[1:])
 # my_var = "1" + my_var[1:]
 # print(my_var)
+
+# Part 2: Section 8(1) // Lists
+# mutable
+# my_list = [1, 2, 3, 4, 5]
+# # my_list.pop() # removes last item (same as JS) // can specify index
+#
+# my_list[0] = 'S'
+#
+# print(type(my_list))
+# print(my_list)
+#
+# my_list[0] = ['hello', 'good bye']
+# my_list.append("this is a sentence")
+#
+# sentence = my_list.pop()
+#
+# print(my_list)
+#
+# print(sentence)
+#
+# None
+#
+# my_list = [4, 5, 3, 1, 2]
+#
+# my_list.sort()
+#
+# print(my_list)
+#
+# my_list = [4, 5, 3, 1, 2]
+# my_list.reverse()
+# print(my_list)
+#
+# my_list = ['4', '5', '3', '1', '2']
+# my_list.sort()
+# my_list.reverse()
+# print(my_list)
+#
+# my_list = ['b', 'd', 'a', 'z', 'x']
+# my_list.sort()
+# print(my_list)
+#
+# print(my_list[2:])
+# print(my_list[2:4])
+# print(my_list[-1])
+#
+# item_count = len(my_list)
+# print(item_count)
+#
+# my_list = ['b', 'd', 'a', 'z', 'x']
+#
+# another_list = [4, 5, 3, 1, 2]
+#
+# # new_list = my_list + another_list
+# # print(new_list)
+#
+# my_list.append(another_list)
+# print(my_list)
+# # concatenate the last three items of the sorted and reversed lists
+# my_list = ['b', 'd', 'a', 'z', 'x']
+# another_list = [1, 2, 3, 4, 5]
+#
+# my_list.sort()
+# my_list.reverse()
+# print(my_list)
+# another_list.reverse()
+# print(another_list)
+#
+# result = my_list[2:] + another_list[2:]
+# print('result:', result)
+
+# Section 9(2) // Accessing Elements in Nested Lists
+
+# my_list = ['a', 'b', 'c', 1, 2, 3, ['apple', 'orange', 'banana'], 'd']
+# # print 'banana'
+# print(my_list[-2][2])
+#
+# my_list = ['a', 'b', 'c', 1, 2, 3, ['apple', 'orange', ['john', 'robert'], 'banana'], 'd']
+# # print 'robert'
+# print(my_list[-2][2][1])
+#
+# my_list[2] = 'computer'
+# print(my_list)
+# # change 'robert' to 'joe'
+#
+# my_list[-2][2][1] = 'joe'
+# print(my_list)
+
+# Section 10(3) // Finding index positions in lists and counting duplicates
+
+# my_list = ['a','b', 'c', 'd']
+#
+# idx_pos = my_list.index('c')
+# print(idx_pos)
+#
+# my_list = ['a','b', 'c', 'd', 'c', 'c']
+# c_count = my_list.count('c')
+# print(c_count)
+
+# Section 11(4) // Tuples
+
+# my_list = [1, 2, 3]
+#
+# my_list[1] = 'NEW VALUE'
+#
+# print(my_list)
+#
+# my_tuple = (1, 2, 3, "some data", [1, 2, 3])
+# print(my_tuple)
+#
+# print(my_tuple[4])
+
+# my_tuple[3] = 4 # tuple object does not support item assignment
+# my_tuple[4][2] = "new value"  # changing a value in the list inside the tuple works
+# print(my_tuple)
+#
+# my_tuple = (1, 2, 3, "some data", 'some data', 'some data', [1, 2, 3])
+#
+# count = my_tuple.count("some data")
+# print(count)
+#
+# print(my_tuple[3:6]) # slicing a tuple returns a tuple
+#
+# str_tuple = my_tuple[3:6]
+# print(type(str_tuple))
+#
+# extracted = my_tuple[6]
+# print(extracted)
+# print(type(extracted))
+
+# Section 12(5) // dictionaries
+
+dict = {'k1': 'some data'}
+
+value = dict['k1']
+print(value)
+
