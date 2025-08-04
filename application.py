@@ -253,8 +253,81 @@
 
 # Section 12(5) // dictionaries
 
-dict = {'k1': 'some data'}
+# dict = {'k1': 'some data', '7': 'other data'}
+#
+# value = dict['k1']
+# print(value)
+#
+# value = dict['7']
+# print(value)
+#
+# dict['7'] = 'NEW VALUE'
+# print(dict)
+#
+# dict['k1'] = 'new value'
+# print(dict)
+#
+# people_weight_dict = {'john': 134, 'mike': 170, 'robert': 165}
+#
+# print(people_weight_dict)
+#
+# people_weight_dict['john'] = 150
+# print(people_weight_dict['john'])
+#
+# print(people_weight_dict)
+#
+# weight_of_mike = people_weight_dict.pop('mike')  # storing .pop() will return the value from key-value pair
+# print(weight_of_mike)
+# print(people_weight_dict)
+#
+# people_weight_dict = {'john': 134, 'mike': 170, 'robert': 165}
+#
+# people_weight_dict.clear()  # empties the dictionary
+# print(people_weight_dict)
+#
+# people_weight_dict = {'john': 134, 'mike': 170, 'robert': 165, 'items': ['orange', 'banana']}
+#
+# people_weight_dict['99'] = 'some data'  # adding key value pairs
+# print(people_weight_dict)
+# print(people_weight_dict['99'])
+# print(people_weight_dict['items'])
+# print(people_weight_dict['items'][1])
+#
+# people_weight_dict = {'john': 134, 'mike': 170,
+#                       'robert': 165, 'items': ['orange', {'k1': 'some value'}],
+#                       'tuple': (1, 2, 3, 4, 5)
+#                       }
+#
+# print(people_weight_dict['items'][1]['k1'])
+#
+# my_tuple = people_weight_dict['tuple']
+# print(my_tuple)
+# print(my_tuple[2])
+#
+# tuple_removed = people_weight_dict.pop('tuple')
+# print(people_weight_dict)
+# print(tuple_removed)
 
-value = dict['k1']
-print(value)
 
+# Section 13(6) // Comparison Operators
+
+print(10 == 10)  # True
+print(10 == 9)  # False
+print(5 == '5')  # False
+print(5 == 5.00)  # True
+print(5 < 10)  # True
+print(5 > 10)  # False
+print(5 >= 5)  # True
+print(5 != 6)  # True
+print(5 != 5)  # False
+
+print(('hello' == 'Hello') or (5 == 5))  # True
+print((('hello' == 'Hello') or (5 == 6)) and True)  # False (False and True => False)
+
+print(not 5) # False
+print(not False) # True
+print(not True) # False
+
+condition = not (5==5) # False
+
+print(type(condition)) # boolean
