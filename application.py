@@ -311,23 +311,100 @@
 
 # Section 13(6) // Comparison Operators
 
-print(10 == 10)  # True
-print(10 == 9)  # False
-print(5 == '5')  # False
-print(5 == 5.00)  # True
-print(5 < 10)  # True
-print(5 > 10)  # False
-print(5 >= 5)  # True
-print(5 != 6)  # True
-print(5 != 5)  # False
+# print(10 == 10)  # True
+# print(10 == 9)  # False
+# print(5 == '5')  # False
+# print(5 == 5.00)  # True
+# print(5 < 10)  # True
+# print(5 > 10)  # False
+# print(5 >= 5)  # True
+# print(5 != 6)  # True
+# print(5 != 5)  # False
+#
+# print(('hello' == 'Hello') or (5 == 5))  # True
+# print((('hello' == 'Hello') or (5 == 6)) and True)  # False (False and True => False)
+#
+# print(not 5) # False
+# print(not False) # True
+# print(not True) # False
+#
+# condition = not (5==5) # False
+#
+# print(type(condition)) # boolean
 
-print(('hello' == 'Hello') or (5 == 5))  # True
-print((('hello' == 'Hello') or (5 == 6)) and True)  # False (False and True => False)
 
-print(not 5) # False
-print(not False) # True
-print(not True) # False
+# Section 14(7) // Functions
 
-condition = not (5==5) # False
+# help(print)
 
-print(type(condition)) # boolean
+# def greet_person(jibberish = 'your name'): # default value = 'your name'
+#     '''
+#     DOCSTRING: this returns a greeting
+#     INPUT: jibberish
+#     OUTPUT: hello ... name
+#     '''
+#
+#     print('this is the body of the function')
+#     return "Hello there, " + str(jibberish) + "!"
+#
+# # greet_person("Aidan")
+# # greet_person()
+#
+# greeting = greet_person(4)
+# print(greeting)
+#
+# def remainder(num1, num2):
+#     """
+#     INPUT: num1, num2 - these are the numbers to divide to get a remainder
+#     """
+#     return num1 % num2
+#
+# print(remainder(10, 5))
+
+
+# Section 15 // args and kwargs
+#
+# result = sum((1,2,3,4,5))
+# print(result)
+#
+# # def my_sum(a, b, c, d):
+# #     return a + b + c + d
+#
+# # my_sum(1, 2, 3, 4, 5) # incorrect number of arguments (4 positional vs. 5 given)
+#
+# def my_sum(*args):
+#     return sum(args)
+#
+# result = my_sum(1,2,3,4,5, 10, 20, 30, 1, 1, 5, 6)
+# print(result)
+#
+#
+# def key_vale_func(**kwargs):
+#     print(kwargs)
+#     print(kwargs.keys())
+#     print(kwargs.values())
+#     print(kwargs.get("weight"))
+#     print(kwargs.get("height")) # None (paramter not given)
+#
+# key_vale_func(name = 'mike', weight = 200, age = 27)
+
+# Section 16 // Scope
+
+age = 27 # global scope
+
+print(age)
+
+def increase_age():
+    age = 30 # local variable
+
+    def add_4_to_age(age): # defining a nested function
+        age += 4
+        print("NESTED METHOD: " + str(age))
+
+    # calling the nested function
+    add_4_to_age(age)
+    print(age)
+
+increase_age()
+
+print(age)
