@@ -15,6 +15,7 @@
 # weight = 160
 # sentence = name + " weighs " + str(weight) + " lbs"
 # print(sentence)
+from operator import index
 
 # Section 2
 # adult = True
@@ -384,27 +385,128 @@
 #     print(kwargs.keys())
 #     print(kwargs.values())
 #     print(kwargs.get("weight"))
-#     print(kwargs.get("height")) # None (paramter not given)
+#     print(kwargs.get("height")) # None (parameter not given)
 #
 # key_vale_func(name = 'mike', weight = 200, age = 27)
 
 # Section 16 // Scope
 
-age = 27 # global scope
+# age = 27 # global scope
+#
+# print(age)
+#
+# def increase_age():
+#     age = 30 # local variable
+#
+#     def add_4_to_age(age): # defining a nested function
+#         age += 4
+#         print("NESTED METHOD: " + str(age))
+#
+#     # calling the nested function
+#     add_4_to_age(age)
+#     print(age)
+#
+# increase_age()
+#
+# print(age)
 
-print(age)
 
-def increase_age():
-    age = 30 # local variable
+# Section 17 // Control Flow
 
-    def add_4_to_age(age): # defining a nested function
-        age += 4
-        print("NESTED METHOD: " + str(age))
 
-    # calling the nested function
-    add_4_to_age(age)
-    print(age)
+# elephant = 800
+# hippo = 400
+#
+# if elephant < hippo:
+#     print('elephant weighs less than hippo')
+# else:
+#     print('elephant is heavier than hippo')
 
-increase_age()
+# elephant = 800
+# hippo = 900
+#
+# value = elephant < hippo
+# print(value)
+#
+# if (True):
+#     print('This will always be printed')
+# else:
+#     print('This will never be printed')
+#
+#
+# if (elephant < hippo and (3 > 2)):
+#     print('The if statement evaluated to true')
+#     if 5 < 7:
+#         print('5 < 7')
+# else:
+#     print('if statement evaluated to false')
+#
+# if (elephant > hippo):
+#     print('The if statement evaluated to true')
+#     if 5 > 7:
+#         print('5 > 7')
+#     else:
+#         print('bla bla')
+# else:
+#     print('if statement evaluated to false')
 
-print(age)
+
+# Section 18 // elif statements
+
+# animal = 'ape' # change this variable, different foods print
+#
+# if animal == 'cow':
+#     print('eats grass')
+# elif animal == 'bird':
+#     print('eats seeds')
+# elif animal == 'monkey' or animal == 'ape':
+#     print('eats bananas')
+# else:
+#     print("we don't know what the animal eats")
+
+
+# Section 19 // for loops
+
+# farm_animals = ['goat', 'horse', 'chicken', 'cow', 'dog']
+#
+# for animal in farm_animals:
+#     print(animal)
+#
+
+# farm_animals = ('goat', 'horse', 'chicken', 'cow', 'dog') # works as a tuple as well
+#
+# counter = 0
+#
+# for animal in farm_animals:
+#     counter += 1
+#     sentence = animal + ' is safe in our farm'
+#     print(counter, sentence)
+
+
+# greeting = "hello my name is Aidan"
+#
+# counter = 0
+#
+# for char in greeting:
+#     if char == 'n':
+#         break # loop is terminated
+#         # continue # loop meeting condition is skipped
+#     print(char)
+
+
+# Section 20 // pass statement in for loops
+
+# mylist = ['computer', 'car', 'bottle', 'tv']
+#
+# for item in mylist: # indentation error
+#     # comment to coder: work on this next week
+#     pass # <-- does nothing, but allows interpreter to compile
+#
+# # do other stuff
+#
+# for item in ['computer', 'car', 'bottle', 'tv']:
+#     print(item)
+#
+#
+# for item in 'this is a string':
+#     print(item)
