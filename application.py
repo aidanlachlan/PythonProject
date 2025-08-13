@@ -578,3 +578,98 @@ from operator import index
 #     print('name', name)
 #     print('salary', salary)
 #     print('age', age)
+
+
+# Section 23 // Range, Enumerate, and Zip functions
+
+# list function
+# word = 'hello'
+#
+# my_list = list(word)
+#
+# print(my_list)
+#
+# for letter in list(word):
+#     print(letter)
+#
+# # Range
+# for num in range(1, 11): # start number, stop number up to but not including
+#     print(num)
+#
+#
+# for num in range(2, 11, 2): # step size
+#     print(num)
+#
+#
+# my_nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# words = ['hello', 'my', 'name', 'is', 'aidan' ]
+#
+# for item in zip(my_nums, words):
+#     print(item) # combines the items it can into tuples
+
+
+# Section 24 // Handy functions and the Random Package
+
+
+# list_a = ['a', 'b', 'c', 'd', 'e', 'f']
+# list_b = [1, 2, 3, 4, 5, 6]
+# list_c = [99, 98, 97, 96, 95, 94]
+#
+# zipped_list = list(zip(list_a, list_b, list_c))
+#
+# print(zipped_list) # list of tuples
+#
+# for a, b, c in zipped_list:
+#     print(a, b, c)
+
+
+
+# list_a = ['a', 'b', 'c', 'd', 'e', 'f']
+#
+# print('z' in list_a)  # boolean check
+#
+# print('john' in {'john': 140})  # true
+# print(140 in {'john': 140})  # false... By default checks KEYS
+# print(140 in {'john': 140}.values())  # true with values func
+#
+# list_b = [1, 2, 3, 4, 5]
+#
+# answer = max(list_b) # checks for maximum value
+# print(answer)
+# answer = min(list_b) # checks for minimum
+# print(answer)
+#
+# answer = max(list_a) # works for characters, increases value in alphabetical order
+# print(answer) # 'f'
+
+#
+# from random import randint
+#
+# random_number = randint(0, 1000)
+# print(random_number)
+#
+# from random import shuffle
+#
+# mylist = [1,2,3,4,5]
+# shuffle(mylist)
+# print(mylist)
+#
+#
+# new_list = list(range(101)) # creating a large list without inputting manually
+# print(new_list)
+#
+# shuffle(new_list)
+# print(new_list)
+
+# Section 25 // Accepting input from a user
+
+
+name = input('Enter your name: ')
+
+print("Hello there " + name.strip()) # strip gets rid of whitespace, not entirely necessary
+
+# print(type(name)) # string
+
+
+number = input('Enter a number: ')
+print(5 + int(number)) # convert input type to integer
