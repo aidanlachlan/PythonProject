@@ -547,5 +547,34 @@ from operator import index
 
 
 # Section 22 // looping and unpacking with dictionaries and tuples
-
-
+#
+# employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+#
+# for person in employees:
+#     print(person, employees[person])
+#
+#
+#
+# employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+#
+# for entry in employees.items():
+#     print(entry) # this is a tuple
+#
+# for salary in employees.values():
+#     print(salary)
+#
+# for key in employees.keys():
+#     print(key)
+#
+# for (key, value) in employees.items():
+#     print(key)
+#     print(value)
+#
+#
+#
+# employees = [('mike', 27000, 29), ('john', 65000, 47), ('rebeca', 60000, 62), ('tom', 100000, 29)]
+#
+# for (name, salary, age) in employees:
+#     print('name', name)
+#     print('salary', salary)
+#     print('age', age)
