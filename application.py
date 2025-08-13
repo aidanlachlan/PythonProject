@@ -511,3 +511,41 @@ from operator import index
 # for item in 'this is a string':
 #     print(item)
 
+# Section 21 // While loop
+
+# structure
+# while <condition is true>:
+#     # do something
+# else:
+#     # do something else...
+
+# x = 0
+#
+# while x < 10: # this will always be true, loop will run forever
+#     print(x)
+#     # x = x + 1 // this will increment x up to 10 (9) and then else will run
+# else:
+#     print('x is not less than 10')
+
+#
+# x = 0
+#
+# while x < 10: # this will always be true, loop will run forever
+#     x += 3
+#
+#     if x==6:
+#         continue
+#
+#     print(x)
+#
+# else:
+#     print('x is not less than 10')
+#
+# # x = 0, 3, 9, 12, and then else is printed.
+# # This is because x is added to when it is 9 and then printed
+# # (cont) before the loop ends
+
+
+# Section 22 // looping and unpacking with dictionaries and tuples
+
+
